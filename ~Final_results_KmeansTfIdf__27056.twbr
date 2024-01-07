@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='df_final_kmean-tfidf' inline='true' name='federated.0ra0fi10vr0lv816qms4w00pm6jc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_final_kmean-tfidf' name='textscan.0i7ygke0qyy2s31ay5n6p04oxema'>
+            <connection class='textscan' directory='C:/Users/Carlos Andres Cortes/OneDrive/Polytech/Polytech4A/S1/DATA732/Projet/results' filename='df_final_kmean-tfidf.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0i7ygke0qyy2s31ay5n6p04oxema' name='df_final_kmean-tfidf.csv' table='[df_final_kmean-tfidf#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='url' ordinal='1' />
+            <column datatype='string' name='domain' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='string' name='cluster' ordinal='4' />
+            <column datatype='real' name='vector1' ordinal='5' />
+            <column datatype='real' name='vector2' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0i7ygke0qyy2s31ay5n6p04oxema' name='df_final_kmean-tfidf.csv' table='[df_final_kmean-tfidf#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='url' ordinal='1' />
+            <column datatype='string' name='domain' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='string' name='cluster' ordinal='4' />
+            <column datatype='real' name='vector1' ordinal='5' />
+            <column datatype='real' name='vector2' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[domain]</local-name>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias>domain</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cluster]</local-name>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vector1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vector1]</local-name>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias>vector1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vector2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vector2]</local-name>
+            <parent-name>[df_final_kmean-tfidf.csv]</parent-name>
+            <remote-alias>vector2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_final_kmean-tfidf.csv' datatype='table' name='[__tableau_internal_object_id__].[df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C]' role='measure' type='quantitative' />
+      <column caption='Cluster' datatype='string' default-role='measure' default-type='quantitative' name='[cluster]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Domain' datatype='string' name='[domain]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Vector1' datatype='real' name='[vector1]' role='measure' type='quantitative' />
+      <column caption='Vector2' datatype='real' name='[vector2]' role='measure' type='quantitative' />
+      <column-instance column='[cluster]' derivation='None' name='[none:cluster:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:cluster:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;0&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;4&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;3&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;6&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;5&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_final_kmean-tfidf.csv' id='df_final_kmean-tfidf.csv_E5273DBE2B7F433FAC6D1BF91B79AE1C'>
+            <properties context=''>
+              <relation connection='textscan.0i7ygke0qyy2s31ay5n6p04oxema' name='df_final_kmean-tfidf.csv' table='[df_final_kmean-tfidf#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='url' ordinal='1' />
+                  <column datatype='string' name='domain' ordinal='2' />
+                  <column datatype='string' name='title' ordinal='3' />
+                  <column datatype='string' name='cluster' ordinal='4' />
+                  <column datatype='real' name='vector1' ordinal='5' />
+                  <column datatype='real' name='vector2' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Cluster Distribution with k-means
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_final_kmean-tfidf' name='federated.0ra0fi10vr0lv816qms4w00pm6jc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ra0fi10vr0lv816qms4w00pm6jc'>
+            <column-instance column='[cluster]' derivation='Attribute' name='[attr:cluster:nk]' pivot='key' type='nominal' />
+            <column caption='Cluster' datatype='string' default-role='measure' default-type='quantitative' name='[cluster]' role='dimension' type='nominal' />
+            <column caption='Domain' datatype='string' name='[domain]' role='dimension' type='nominal' />
+            <column-instance column='[cluster]' derivation='None' name='[none:cluster:nk]' pivot='key' type='nominal' />
+            <column-instance column='[domain]' derivation='None' name='[none:domain:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vector1]' derivation='None' name='[none:vector1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[vector2]' derivation='None' name='[none:vector2:qk]' pivot='key' type='quantitative' />
+            <column caption='Vector1' datatype='real' name='[vector1]' role='measure' type='quantitative' />
+            <column caption='Vector2' datatype='real' name='[vector2]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ra0fi10vr0lv816qms4w00pm6jc].[attr:cluster:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[attr:cluster:nk]' member='&quot;0&quot;' />
+              <groupfilter function='member' level='[attr:cluster:nk]' member='&quot;1&quot;' />
+              <groupfilter function='member' level='[attr:cluster:nk]' member='&quot;2&quot;' />
+              <groupfilter function='member' level='[attr:cluster:nk]' member='&quot;3&quot;' />
+              <groupfilter function='member' level='[attr:cluster:nk]' member='&quot;4&quot;' />
+              <groupfilter function='member' level='[attr:cluster:nk]' member='&quot;5&quot;' />
+              <groupfilter function='member' level='[attr:cluster:nk]' member='&quot;6&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ra0fi10vr0lv816qms4w00pm6jc].[none:domain:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:domain:nk]' />
+              <groupfilter function='member' level='[none:domain:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ra0fi10vr0lv816qms4w00pm6jc].[none:domain:nk]</column>
+            <column>[federated.0ra0fi10vr0lv816qms4w00pm6jc].[attr:cluster:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ra0fi10vr0lv816qms4w00pm6jc].[none:cluster:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ra0fi10vr0lv816qms4w00pm6jc].[none:vector2:qk]</rows>
+        <cols>[federated.0ra0fi10vr0lv816qms4w00pm6jc].[none:vector1:qk]</cols>
+      </table>
+      <simple-id uuid='{2A968120-D43B-4250-9B40-70E39DB4D751}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.0ra0fi10vr0lv816qms4w00pm6jc].[none:cluster:nk]' type='color' />
+            <card param='[federated.0ra0fi10vr0lv816qms4w00pm6jc].[attr:cluster:nk]' show-morefewerbutton='false' type='filter' />
+            <card param='[federated.0ra0fi10vr0lv816qms4w00pm6jc].[none:domain:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEC8BAA1-87B4-4B36-814F-05F9687AA264}' />
+    </window>
+  </windows>
+</workbook>
